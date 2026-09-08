@@ -1,0 +1,37 @@
+.gitignore
+  s_37855b5ec51fc5::t_f48242758bfdaa 1-24
+.vscode/extensions.json
+  s_37855b5ec51fc5::t_2c1d52d8d3415f 1-4
+.vscode/launch.json
+  s_37855b5ec51fc5::t_dfe406ed843f29 1-11
+README.md
+  s_37855b5ec51fc5::t_bbbcfd149a551e 1-43
+astro.config.mjs
+  s_37855b5ec51fc5::t_bbdded3e00a1ee 1-5
+package.json
+  s_37855b5ec51fc5::t_5aea505e076313 1-21
+pnpm-lock.yaml
+  s_37855b5ec51fc5::t_09acec6d25a35d 1-2584
+public/favicon.svg
+  s_37855b5ec51fc5::t_26fdf8be27dedb 1-9
+src/pages/index.astro
+  s_37855b5ec51fc5::t_f8a68f24beff3f 1-17
+tsconfig.json
+  s_37855b5ec51fc5::t_72756f850c719b 1-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "cb331101725c6e800a8a604897ea5588de4027c8",
+  "prompts": {},
+  "sessions": {
+    "s_37855b5ec51fc5": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f7da4da6affeNJJWDzsCbOVZV6",
+        "model": "gpt-5.6-luna"
+      },
+      "human_author": "James Quick <jquick@cloudflare.com>"
+    }
+  }
+}
