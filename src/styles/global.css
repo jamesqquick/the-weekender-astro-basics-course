@@ -1,0 +1,108 @@
+@import "@fontsource-variable/manrope";
+@import "@fontsource-variable/oswald";
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope Variable", sans-serif;
+  --font-display: "Oswald Variable", sans-serif;
+
+  --color-paper: oklch(0.965 0.022 82);
+  --color-cream: oklch(0.925 0.035 78);
+  --color-ink: oklch(0.19 0.025 250);
+  --color-blue: #2048bd;
+  --color-tomato: #b9230c;
+  --color-yellow: oklch(0.86 0.16 90);
+  --color-green: oklch(0.57 0.12 155);
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+    font-family: var(--font-sans);
+    background: var(--color-paper);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    color: var(--color-ink);
+    background: var(--color-paper);
+  }
+
+  ::selection {
+    color: var(--color-paper);
+    background: var(--color-blue);
+  }
+
+  a,
+  button,
+  input,
+  select {
+    border-radius: 0.125rem;
+  }
+
+  button,
+  select {
+    cursor: pointer;
+  }
+
+  button:disabled {
+    cursor: not-allowed;
+  }
+
+  :focus-visible {
+    outline-color: var(--color-tomato);
+  }
+}
+
+@layer components {
+  .page-shell {
+    width: min(100% - 2rem, 90rem);
+    margin-inline: auto;
+  }
+
+  .event-prose {
+    max-width: 68ch;
+    font-size: 1.075rem;
+    line-height: 1.8;
+  }
+
+  .event-prose > * + * {
+    margin-top: 1.25rem;
+  }
+
+  .event-prose h2 {
+    margin-top: 2.75rem;
+    font-family: var(--font-display);
+    font-size: 2rem;
+    line-height: 1.05;
+    text-transform: uppercase;
+  }
+
+  .event-prose ul {
+    padding-left: 1.25rem;
+    list-style: square;
+  }
+
+  .event-prose li + li {
+    margin-top: 0.45rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
